@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F1E04C"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usercall"
+        android:text="Hey User "
+        android:textSize="30sp"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/call"
+        android:text="Let's Start a Call"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#070707"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="40dp">
+
+        <EditText
+            android:id="@+id/seconduserIdedittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="40sp"
+            android:background="@drawable/rounded"
+            android:hint="USER ID"
+            android:paddingHorizontal="12dp"
+            android:paddingLeft="50dp"
+            android:textColor="#000"
+            tools:ignore="Autofill,TextFields" />
+
+       <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+           android:layout_width="48dp"
+           android:layout_height="48dp"
+           android:id="@+id/voice_call_btn"
+           android:layout_marginHorizontal="10dp"
+           android:layout_centerVertical="true"
+           android:layout_toLeftOf="@+id/video_call_btn"/>
+
+        <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/video_call_btn"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

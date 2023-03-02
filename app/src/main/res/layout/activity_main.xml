@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/voicece"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/easycall"
+        android:text="Easy Call"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/get"
+        android:text="Let's Get Started"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#0FE117"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/edittext"
+        android:hint="USER ID"
+        android:textColor="#000"
+        android:paddingLeft="30dp"
+        android:background="@drawable/rounded"
+        android:layout_marginTop="30sp"
+        android:layout_marginHorizontal="12dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Start"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded"
+        android:id="@+id/btn"/>
+
+
+
+
+
+
+</LinearLayout>
